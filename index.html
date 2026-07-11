@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Своя книга — поможем написать и издать книгу вашей жизни</title>
+<meta name="description" content="Издательство «Своя книга»: мемуары, семейные истории, стихи. От рукописи до книги, которую захочется передать детям.">
+<style>
+  :root{
+    --ink:#2b2620;
+    --paper:#faf6ee;
+    --warm:#8a5a2b;
+    --warm-dark:#6e4520;
+    --line:#e3d9c6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Georgia,'Times New Roman',serif;
+    font-size:21px;
+    line-height:1.65;
+  }
+  .wrap{max-width:900px;margin:0 auto;padding:0 24px}
+  header{padding:56px 0 40px;text-align:center;border-bottom:1px solid var(--line)}
+  h1{font-size:56px;letter-spacing:.5px;margin-bottom:14px}
+  .slogan{font-size:26px;font-style:italic;color:var(--warm-dark)}
+  .motto{margin-top:22px;font-size:19px;color:#5a5245}
+  section{padding:44px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:34px;margin-bottom:22px;color:var(--warm-dark)}
+  p{margin-bottom:16px}
+  .talk p{font-size:22px}
+  .steps{counter-reset:step;list-style:none;margin-top:8px}
+  .steps li{
+    position:relative;padding:10px 0 10px 64px;font-size:22px;
+  }
+  .steps li::before{
+    counter-increment:step;content:counter(step);
+    position:absolute;left:0;top:6px;width:44px;height:44px;
+    background:var(--warm);color:#fff;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:22px;font-weight:bold;
+  }
+  .packs{display:flex;gap:22px;flex-wrap:wrap;margin-top:10px}
+  .pack{
+    flex:1;min-width:240px;background:#fff;border:1px solid var(--line);
+    border-radius:10px;padding:26px 22px;text-align:center;
+  }
+  .pack h3{font-size:26px;margin-bottom:6px}
+  .price{font-size:34px;color:var(--warm-dark);margin:10px 0 14px;font-weight:bold}
+  .pack ul{list-style:none;font-size:18px;color:#4a4438}
+  .pack li{padding:5px 0;border-top:1px dashed var(--line)}
+  .pack li:first-child{border-top:none}
+  .note{font-size:17px;color:#6b6355;margin-top:16px}
+  .covers{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:10px}
+  .covers figure{width:170px;text-align:center}
+  .covers img{
+    width:100%;border:1px solid var(--line);border-radius:4px;
+    box-shadow:0 4px 14px rgba(60,45,20,.18);
+  }
+  .covers figcaption{font-size:15px;margin-top:8px;color:#5a5245}
+  form{max-width:640px;margin:14px auto 0}
+  label{display:block;font-size:20px;margin:16px 0 6px}
+  input,textarea{
+    width:100%;padding:14px;font-size:20px;font-family:inherit;
+    border:1px solid #c9bda5;border-radius:8px;background:#fff;
+  }
+  textarea{min-height:130px}
+  button{
+    margin-top:24px;width:100%;padding:18px;font-size:24px;font-family:inherit;
+    background:var(--warm);color:#fff;border:none;border-radius:10px;cursor:pointer;
+  }
+  button:hover{background:var(--warm-dark)}
+  .contact{text-align:center;font-size:20px}
+  .contact a{color:var(--warm-dark)}
+  footer{padding:30px 0 44px;text-align:center;font-size:16px;color:#7a7264}
+  @media(max-width:640px){
+    h1{font-size:40px}
+    body{font-size:19px}
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <h1>Своя книга</h1>
+  <div class="slogan">У каждого человека есть книга.<br>Мы поможем её написать.</div>
+  <div class="motto">Мы делаем не книгу — мы помогаем человеку сохранить свою жизнь для детей и внуков.</div>
+</header>
+
+<section class="wrap talk">
+  <h2>Здравствуйте</h2>
+  <p>Если вы открыли эту страницу, значит, скорее всего, у вас уже давно живёт одна мысль: <em>«Когда-нибудь надо написать книгу»</em>.</p>
+  <p>Может быть, это воспоминания о жизни. Может быть, история семьи. Может быть, стихи, которые много лет лежат в столе. А может быть, вам просто хочется, чтобы дети и внуки однажды открыли книгу и услышали ваш голос.</p>
+  <p>Если это так — вы пришли по адресу.</p>
+  <p>Неважно, написали вы уже двести страниц или пока только одну. Неважно, умеете ли вы писать книги. Большинство наших авторов никогда раньше их не писали.</p>
+  <p>Мы не будем учить вас быть писателем. <strong>Мы поможем вам рассказать вашу историю.</strong></p>
+  <p>Мы никуда не торопим. И никогда не обещаем невозможного. Мы просто работаем рядом с вами, пока однажды вы не возьмёте в руки книгу и не скажете: <em>«Это моя книга»</em>.</p>
+</section>
+
+<section class="wrap">
+  <h2>Как мы работаем</h2>
+  <ol class="steps">
+    <li>Бесплатный разговор: знакомимся, слушаем вашу историю.</li>
+    <li>Читаем рукопись, если она есть. Нет — не беда, начнём с разговоров.</li>
+    <li>Честно говорим, что уже получилось и что предстоит сделать.</li>
+    <li>Заключаем простой договор: что делаем, к какому сроку, сколько стоит.</li>
+    <li>Работаем вместе: редактура, обложка, вёрстка.</li>
+    <li>Печатаем пробный экземпляр.</li>
+    <li>Вы держите свою книгу в руках.</li>
+  </ol>
+</section>
+
+<section class="wrap">
+  <h2>Что мы умеем</h2>
+  <p>Разбор рукописи с подробным письменным отзывом. Редактура: от лёгкой правки до глубокой работы с текстом. Вёрстка книги под печать. Обложка: от идеи до файла в типографию. Издание: ISBN, печать по требованию — книга никогда не кончается на складе, каждый экземпляр печатается для конкретного читателя. Помощь с продажей и доставкой по всему миру.</p>
+</section>
+
+<section class="wrap">
+  <h2>Сколько это стоит</h2>
+  <div class="packs">
+    <div class="pack">
+      <h3>«Рукопись»</h3>
+      <div class="price">$350</div>
+      <ul>
+        <li>внимательно читаем ваш текст</li>
+        <li>подробный письменный отзыв</li>
+        <li>редактура и план будущей книги</li>
+        <li>вы получаете рукопись, готовую стать книгой</li>
+      </ul>
+    </div>
+    <div class="pack">
+      <h3>«Книга»</h3>
+      <div class="price">$900</div>
+      <ul>
+        <li>весь путь от рукописи до конца</li>
+        <li>редактура и корректура</li>
+        <li>обложка и вёрстка</li>
+        <li>ISBN и выход в печать</li>
+        <li>вы держите свою книгу в руках</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Печатные экземпляры оплачиваются отдельно по себестоимости типографии: пробный экземпляр — около 12 долларов. Точная цена — после бесплатного разговора и знакомства с рукописью.</p>
+</section>
+
+<section class="wrap">
+  <h2>Наши книги</h2>
+  <p>Книги, изданные основателем издательства, — этим путём мы проведём и вас:</p>
+  <div class="covers">
+    <figure><img src="cover1.jpg" alt="На дороге — мемуары"><figcaption>«На дороге» — мемуары</figcaption></figure>
+    <figure><img src="cover2.jpg" alt="Дело о царских червонцах — детектив"><figcaption>«Дело о царских червонцах»</figcaption></figure>
+    <figure><img src="cover3.jpg" alt="Следствие ведут писатели — сборник"><figcaption>«Следствие ведут писатели»</figcaption></figure>
+    <figure><img src="cover4.jpg" alt="Разговор писателя с ИИ"><figcaption>«Разговор писателя с ИИ»</figcaption></figure>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Расскажите о своей книге</h2>
+  <form action="https://formsubmit.co/kniga@svoyakniga.com" method="POST">
+    <input type="hidden" name="_subject" value="Заявка с сайта Своя книга">
+    <input type="hidden" name="_captcha" value="false">
+    <label for="name">Ваше имя</label>
+    <input id="name" name="Имя" type="text" required>
+    <label for="phone">Телефон или почта</label>
+    <input id="phone" name="Связь" type="text" required>
+    <label for="story">Пара слов о вашей книге</label>
+    <textarea id="story" name="О книге" placeholder="Например: хочу записать историю нашей семьи, есть заметки и старые письма…"></textarea>
+    <button type="submit">Отправить — и мы вам позвоним</button>
+  </form>
+  <p class="contact" style="margin-top:26px">Или напишите нам напрямую: <a href="mailto:kniga@svoyakniga.com">kniga@svoyakniga.com</a></p>
+</section>
+
+<footer class="wrap">
+  Издательство «Своя книга» · TRIO Trading LLC · Arlington, Massachusetts, USA
+</footer>
+
+</body>
+</html>
